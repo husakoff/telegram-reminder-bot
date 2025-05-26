@@ -49,7 +49,7 @@ async def send_reminders():
 
 # Планировщик
 scheduler = AsyncIOScheduler()
-scheduler.add_job(send_reminders, "cron", hour=9, minute=0)
+scheduler.add_job(send_reminders, "cron", hour=22, minute=45)
 scheduler.start()
 
 if __name__ == "__main__":
